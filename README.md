@@ -5,32 +5,36 @@ AI Document Q&amp;A Chatbot using LangChain and Hugging Face
 💬 Chat with your own PDFs using Generative AI + LangChain + Hugging Face
 
 
-
-🧠 Architecture (RAG Pipeline)
+Architecture (RAG Pipeline):
 
     PDF/Text Document → Text Chunking → Embeddings → Vector Store
                                 ↓
                            User Question
                                 ↓
-                     Retrieve Relevant Chunks
+                      Retrieve Relevant Chunks
                                 ↓
-                      LLM Generates Answer
+                        LLM Generates Answer
 
 
-🚀 Overview
+Overview:
 
 Have you ever wished you could ask questions directly from your PDFs or text files — just like chatting with ChatGPT?
 This project makes that possible using a Retrieval-Augmented Generation (RAG) pipeline!
 
 It combines LangChain, Hugging Face Transformers, and Chroma Vector Database to build an intelligent chatbot that can read and answer questions from any uploaded document. 📄🤖
 
-🧩 Key Features
+ Features:
 
 ✅ Upload & Process PDFs or Text Files – Read any document easily
+
 ✅ Retrieval-Augmented Generation (RAG) – Get context-aware answers from your own data
+
 ✅ LLM-powered Answers – Uses google/flan-t5-large from Hugging Face
+
 ✅ Semantic Search with Embeddings – Finds the most relevant parts of your document
+
 ✅ Built-in Streamlit UI – Simple, elegant interface for interactive chatting
+
 ✅ Fully Local – Works without sending your private data to external APIs
 
 ⚙️ Tech Stack
@@ -41,6 +45,9 @@ ChromaDB	Vector database for efficient document retrieval
 SentenceTransformers	For creating embeddings from text
 Streamlit	Web interface for the chatbot
 Python	Core language powering the backend
+
+
+
 🧠 How RAG Works
 
 RAG = Retrieval + Generation
@@ -59,7 +66,9 @@ Generate Answer → LLM uses both retrieved context + query to answer
 
 🧩 Result: An LLM that understands your custom data — not just what it was trained on!
 
+
 💻 How to Run the Project
+
 1️⃣ Clone this Repository
 git clone https://github.com/your-username/rag-qa-chatbot.git
 cd rag-qa-chatbot
